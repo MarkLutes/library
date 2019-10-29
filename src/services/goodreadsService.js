@@ -13,7 +13,7 @@ function goodreadsService() {
             if (err) {
               debug(err);
             } else {
-              debug(result);
+              // debug(result);
               resolve(result.GoodreadsResponse.book);
             }
           });

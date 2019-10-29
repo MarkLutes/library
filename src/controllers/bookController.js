@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 const { MongoClient, ObjectID } = require('mongodb');
 const debug = require('debug')('app:bookController');
 
@@ -14,16 +15,23 @@ function bookController(bookService, nav) {
 
         const db = client.db(dbName);
 
-        const col = await db.collection('books');
+        const col = db.collection('books');
 
         const books = await col.find().toArray();
+
+        const newBooks = [];
+        for (const book of books) {
+          const newBook = bookService.getBookById(book.bookId);
+          newBooks.push(newBook);
+        }
 
         res.render(
           'bookListView',
           {
             nav,
             title: 'Library',
-            books
+            books,
+            newBooks: await Promise.all(newBooks)
           }
         );
       } catch (err) {
