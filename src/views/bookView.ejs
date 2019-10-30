@@ -99,7 +99,7 @@
                           <h3><%=book.title%></h3>
                           <div class="row">
                             <div class="col-xs-9">
-                              <h4><span class="label label-default"><%=book.author%></span>
+                              <h4><a class="label label-default" href="/authors/<%=book.authId%>"><%=book.author%></a>
                               </h4></div>
                             <div class="col-xs-3"></div>
                           </div>
@@ -112,8 +112,7 @@
          
           <!--/stories-->
           
-          
-          <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+     
         
           
         </div>

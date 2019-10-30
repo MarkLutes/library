@@ -9,56 +9,64 @@ const books = [
     genre: 'Historical Fiction',
     author: 'Lev Nikolayevich Tolstoy',
     bookId: 656,
-    read: false
+    read: false,
+    authId: 128382
   },
   {
     title: 'Les Misérables',
     genre: 'Historical Fiction',
     author: 'Victor Hugo',
     bookId: 24280,
-    read: false
+    read: false,
+    authId: 13661
   },
   {
     title: 'The Time Machine',
     genre: 'Science Fiction',
     author: 'H. G. Wells',
     bookId: 2493,
-    read: false
+    read: false,
+    authId: 880695
   },
   {
     title: 'A Journey into the Center of the Earth',
     genre: 'Science Fiction',
     author: 'Jules Verne',
     bookId: 32829,
-    read: false
+    read: false,
+    authId: 696805
   },
   {
     title: 'The Dark World',
     genre: 'Fantasy',
     author: 'Henry Kuttner',
     bookId: 1881716,
-    read: false
+    read: false,
+    authId: 70167
   },
   {
     title: 'The Wind in the Willows',
     genre: 'Fantasy',
     author: 'Kenneth Grahame',
     bookId: 5659,
-    read: false
+    read: false,
+    authId: 3843
   },
   {
     title: 'Life On The Mississippi',
     genre: 'History',
     author: 'Mark Twain',
     bookId: 99152,
-    read: false
+    read: false,
+    authId: 1244
   },
   {
     title: 'Childhood',
     genre: 'Biography',
     author: 'Lev Nikolayevich Tolstoy',
     bookId: 226377,
-    read: false
+    read: false,
+    authId: 128382
   }];
 
 // eslint-disable-next-line no-unused-vars
@@ -81,7 +89,6 @@ function router(nav) {
         } catch (err) {
           debug(err.stack);
         }
-
         client.close();
       }());
     });
