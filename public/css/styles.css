@@ -6,13 +6,14 @@
 }
 
 body {
-  padding-top:50px;
+  margin-top:50px;
   color:#646464;
   background-color:#efefef;
 }
 
-h1,h2,h3,.highlight,.navbar a,#masthead h4 {
-  font-family:'Oswald',arial narrow,sans-serif;
+h1,h2,h3,.highlight,.navbar a {
+  font-family: Georgia, serif;
+  margin: 0 !important;
 }
 
 footer {
@@ -26,24 +27,17 @@ footer {
 
 
 #masthead {
-  min-height:199px;
+  min-height:100px;
   background-color:#000044;
   color:#aaaacc;
 }
 
-#masthead h1 {
-  font-size: 55px;
-  line-height: 1;
-  color:#fefeff;
-  margin-top:50px;
-}
-
 #masthead .well {
-  margin-top:31px;
+  margin-top:20px;
   background-color:#111166;
   border-color:#000022;
   color:#efefff;
-  min-height:127px;
+  text-align: center;
 }
 
 #topPanel {
@@ -77,7 +71,7 @@ a,a:hover {
 
 @media screen and (min-width: 768px) {
   #masthead h1 {
-    font-size: 80px;
+    font-size: 50px;
   }
 }
 

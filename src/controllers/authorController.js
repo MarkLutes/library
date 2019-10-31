@@ -29,7 +29,7 @@ function authorController(authorService, nav) {
           'authorListView',
           {
             nav,
-            title: 'Authors',
+            title: 'AUTHORS',
             authors: await Promise.all(newAuthors)
           }
         );
@@ -49,7 +49,7 @@ function authorController(authorService, nav) {
           'authorView',
           {
             nav,
-            title: 'Authors',
+            title: 'AUTHOR',
             author
           }
         );

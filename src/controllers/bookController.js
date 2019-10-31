@@ -29,7 +29,7 @@ function bookController(bookService, nav) {
           'bookListView',
           {
             nav,
-            title: 'Library',
+            title: 'LIBRARY',
             books,
             newBooks: await Promise.all(newBooks)
           }
@@ -63,7 +63,7 @@ function bookController(bookService, nav) {
           'bookView',
           {
             nav,
-            title: 'Library',
+            title: 'LIBRARY',
             book
           }
         );

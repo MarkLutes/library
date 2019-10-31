@@ -28,8 +28,8 @@ app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 const nav = [
-  { link: '/books', title: 'Book' },
-  { link: '/authors', title: 'Author' }
+  { link: '/books', title: 'Books' },
+  { link: '/authors', title: 'Authors' }
 ];
 
 const bookRouter = require('./src/routes/bookRoutes')(nav);
