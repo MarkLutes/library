@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
     {
       nav: [{ link: '/books', title: 'Books' },
         { link: '/authors', title: 'Authors' }],
-      title: 'Library'
+      title: 'LIBRARY'
     }
   );
 });
